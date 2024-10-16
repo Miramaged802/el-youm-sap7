@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اليوم السابع</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="js/bootstrap.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6ce49d09a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="fixed-top">
+    <div class="backgroundTop1">
+      <div class="top1">
+          <a href="" class="logoArea"><img src="images/youm7logotop1.webp" class="top_logo"></a>
+          <a href="" class="for_ads">
+            <img src="images/ad.webp" alt="">
+          </a>
+          <p class="dateArea">
+            <i class="fa-regular fa-calendar-days" style="color: red;"></i>
+            <span id="day"></span>،
+            <span id="dayNum"></span>
+            <span id="month"></span>
+            <span id="year"></span>
+            <i class="fa-regular fa-clock" style="color: red;"></i>
+            <span id="hour"></span>:<span id="minute"></span>
+            <span id="p/a"></span>
+          </p>
+      </div>
+    </div>
+
+    <div class="top2">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href=""><i class="fa-solid fa-house-chimney"></i> الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">عاجل</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">سياسة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">تقارير</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">حوادث</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">عرب</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">عالم</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">الثانوية العامة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">تحقيقات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">اقتصاد</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">رياضة</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">كرة عالمية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">المزيد</a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+  <main>
+    <div class="backgroundTop3">
+      <div class="container-xl top3">
+        <a href=""><img class="logo" src="images/youm7logotop3.webp"></a>
+        <a href=""><img class="names" src="images/tarwesadesktop2023.webp"></a>
+      </div>
+    </div>
+    <div class="backgroundTop4">
+      <div class="container-xl top4">
+        <div class="row">
+          <div class="col-7">
+            <div class="tickerArea">
+              <img src="images/tickerTitleAni.webp" alt="">
+              <div class="ticker">
+                <ul class="news-list" data-length="5">
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-5 search">
+            <input type="text" class="searchBar rounded" id="searchBar">
+            <button class="searchBtn rounded" id="searchBtn">بحث</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xl mainContent" id="mainContent">
+      <div class="row">
+        <div class="contentArea col-8">
+          <div class="topNews row">
+            <div class="col-7 newsArea" data-bs-toggle="modal" data-bs-target="#newsModal">
+              <div class="imageContainerNews">
+                <img src="" id="newsPhoto">
+              </div>
+              <p id="newsText"></p>
+            </div>
+            <div class="col-5 heading">
+              <div class="flexContainer">
+                <div class="News1" onclick="showNews(1)">
+                  <p></p>
+                </div>
+                <div class="News2" onclick="showNews(2)">
+                  <p></p>
+                </div>
+                <div class="News3" onclick="showNews(3)">
+                  <p></p>
+                </div>
+                <div class="News4" onclick="showNews(4)">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="adsArea col-4"></div>
+      </div>
+      <div class="breakingNews">
+        <div class="header">
+          <p>عاجل</p>
+          <ul>
+            <li><button id="imageBtn1" onclick="showImage(1)">1</button></li>
+            <li><button id="imageBtn2" onclick="showImage(2)">2</button></li>
+            <li><button id="imageBtn3" onclick="showImage(3)">3</button></li>
+            <li><button id="imageBtn4" onclick="showImage(4)">4</button></li>
+            <li><button id="imageBtn5" onclick="showImage(5)">5</button></li>
+            <li><button id="imageBtn6" onclick="showImage(6)">6</button></li>
+            <li><button id="imageBtn7" onclick="showImage(7)">7</button></li>
+            <li><button id="imageBtn8" onclick="showImage(8)">8</button></li>
+            <li><button id="imageBtn9" onclick="showImage(9)">9</button></li>
+            <li><button id="imageBtn10" onclick="showImage(10)">10</button></li>
+            <li><button id="imageBtn11" onclick="showImage(11)">11</button></li>
+            <li><button id="imageBtn12" onclick="showImage(12)">12</button></li>
+            <li><button id="imageBtn13" onclick="showImage(13)">13</button></li>
+          </ul>
+          <ul>
+            <li><button id="increaseBtn"></button></li>
+            <li><button id="pauseBtn"></button></li>
+            <li><button id="decreaseBtn"></button></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="rightFlex"></div>
+          <div class="currentImage"></div>
+          <div class="leftFlex"></div>
+        </div>
+        <div class="imageTitle">
+          <p id="imageTitle"></p>
+        </div>
+      </div>
+      <div class="row mainSection">
+        <div class="col-7 titles">
+          <!-- <div class="sectionTitle">
+            <p>تحقيقات و ملفات</p>
+          </div>
+          <div class="sectionContent">
+            <div class="row">
+              <div class="col-12">
+                <div class="topic">
+                  <img src="images/titles1.webp">
+                  <p>
+                    البيت الأبيض يعلن اقتراب الوصول إلى اتفاق لوقف إطلاق النار.. والمخاوف قائمة جراء هجوم إيرانى محتمل
+                    انتقاما لاغتيال هنية فى طهران.. واشنطن تؤكد استعدادها للدفاع عن إسرائيل.. وجهود مكثفة لمنع التصعيد
+                    فى المنطقة
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rowModified">
+              <div class="halfCol">
+                <div class="topic">
+                  <img src="images/titles2.webp">
+                  <p>
+                    مطروح مقصد المصريين والأجانب.. طبيعة خلابة وشواطئ تمتد لـ 300 كيلو متر.. انتعاشة تجارية وسياحية..
+                    ارتفاع نسب الإشغال بالفنادق والقرى والمنتجعات.. والمحافظ: تكثف الجهود لإنجاح موسم الصيف السياحي..
+                    صور
+                  </p>
+                </div>
+              </div>
+              <div class="halfCol">
+                <div class="topic">
+                  <img src="images/titles3.webp">
+                  <p>
+                    48 ساعة مشوقة لجمهور عمرو دياب وكريم عبد العزيز في مهرجان العلمين الجديدة بدورته الثانية.. مسرحية
+                    السندباد وحفل الهضبة يرفعان شعار كامل العدد منذ أيام.. والجمهور يشيد بالتنوع المختلف للمحتوى
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="rowModified">
+              <div class="halfCol">
+                <div class="topic">
+                  <img src="images/titles4.webp">
+                  <p>
+                    الآلاف من أهالى إسنا يحتفلون بالمولد السنوى للسلطان عبدالجليل.. أهالى قرى النمسا والمساوية والقرايا
+                    يذبحون الأبقار والعجول والجمال لتقديم الغداء والعشاء للضيوف.. والتحطيب وليالى الذكر أبرز المظاهر..
+                    فيديو وصور
+                  </p>
+                </div>
+              </div>
+              <div class="halfCol">
+                <div class="topic">
+                  <img src="images/titles5.webp">
+                  <p>
+                    كيف ساهمت أبحاث الدكتور باسم عبد العاطي في فوزه بجائزة الدولة التشجيعية في العلوم الهندسية؟.. قدم
+                    أبحاثا لتصميم أنظمة تشفير مقاومة للهجمات.. ابتكر خوارزميات للحفاظ على أمن وسرية البيانات.. صور
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <div class="row tripleSection">
+              <div class="col-4" id="politicsSection">
+                <div class="sectionTitle">
+                  <p>سياسة</p>
+                </div>
+                
+              </div>
+              <div class="col-4" id="economicsSection">
+                <div class="sectionTitle">
+                  <p>اقتصاد</p>
+                </div>
+                
+              </div>
+              <div class="col-4" id="sportsSection">
+                <div class="sectionTitle">
+                  <p>اخبار الرياضة</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+        <div class="col-5 choosenTopics">
+          <div class="sectionTitle">
+            <p>مختارات اليوم السابع</p>
+          </div>
+          <div class="sectionContent">
+            <div class="imageContainer">
+              <img src="images/topics1.webp" alt="">
+            </div>
+            <div class="imageContainer">
+              <img src="images/topics2.webp" alt="">
+            </div>
+            <div class="imageContainer">
+              <img src="images/topics3.webp" alt="">
+            </div>
+            <div class="imageContainer">
+              <img src="images/topics4.webp" alt="">
+            </div>
+            <div class="imageContainer">
+              <img src="images/topics5.webp" alt="">
+            </div>
+            <div class="imageContainer">
+              <img src="images/topics6.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="newsModal">
+      <div class="modal-dialog newsModelDialog">
+        <div class="modal-content">
+          <div class="modal-header newsModelHeader">
+            <h4 class="modal-title"></h4>
+            <button type="button" class="btn-close newsBtnClose" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <div class="modal-body newsModelBody">
+           
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
